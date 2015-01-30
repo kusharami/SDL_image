@@ -12,7 +12,7 @@ JPG_LIBRARY_PATH := external/jpeg-9
 # Enable this if you want to support loading PNG images
 # The library path should be a relative path to this directory.
 SUPPORT_PNG ?= true
-PNG_LIBRARY_PATH := external/libpng-1.6.2
+PNG_LIBRARY_PATH := external/libpng-1.6.16
 
 # Enable this if you want to support loading WebP images
 # The library path should be a relative path to this directory.
@@ -83,8 +83,13 @@ ifeq ($(SUPPORT_JPG),true)
         $(JPG_LIBRARY_PATH)/jquant1.c \
         $(JPG_LIBRARY_PATH)/jquant2.c \
         $(JPG_LIBRARY_PATH)/jutils.c \
-        $(JPG_LIBRARY_PATH)/jmemmgr.c \
-        $(JPG_LIBRARY_PATH)/jmem-android.c
+        $(JPG_LIBRARY_PATH)/jmemmgr.c
+		
+	ifeq (1, $(MY_MALLOC))
+		LOCAL_SRC_FILES += external/jmem-android.c	
+	else
+		LOCAL_SRC_FILES += $(JPG_LIBRARY_PATH)/jmem-android.c
+	endif			
 
     # assembler support is available for arm
     ifeq ($(TARGET_ARCH),arm)
