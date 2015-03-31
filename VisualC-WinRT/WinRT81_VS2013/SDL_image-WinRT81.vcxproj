@@ -53,9 +53,6 @@
     <ProjectReference Include="libpng-WinRT81.vcxproj">
       <Project>{5fbdc49a-7939-40f9-b78e-975f190adbd3}</Project>
     </ProjectReference>
-    <ProjectReference Include="libwebp-WinRT81.vcxproj">
-      <Project>{1eb035a3-815a-4382-90d3-4510ab605ad9}</Project>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{29b4d11f-59f3-4ebc-a769-3babd140db9a}</ProjectGuid>
@@ -163,8 +160,8 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>..\..\..\SDL\include;..\..\external\libpng-1.6.2;..\..\external\jpeg-9;..\..\external\libwebp-0.3.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";LOAD_WEBP;LOAD_WEBP_DYNAMIC="libwebp.dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\SDL\include;..\..\external\libpng-1.6.16;..\..\external\jpeg-9;..\..\external\libwebp-0.3.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -176,8 +173,8 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>..\..\..\SDL\include;..\..\external\libpng-1.6.2;..\..\external\jpeg-9;..\..\external\libwebp-0.3.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";LOAD_WEBP;LOAD_WEBP_DYNAMIC="libwebp.dll";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\SDL\include;..\..\external\libpng-1.6.16;..\..\external\jpeg-9;..\..\external\libwebp-0.3.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -190,7 +187,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalIncludeDirectories>..\..\..\SDL\include;..\..\external\libpng-1.6.2;..\..\external\jpeg-9;..\..\external\libwebp-0.3.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";LOAD_WEBP;LOAD_WEBP_DYNAMIC="libwebp.dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -203,7 +200,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalIncludeDirectories>..\..\..\SDL\include;..\..\external\libpng-1.6.2;..\..\external\jpeg-9;..\..\external\libwebp-0.3.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";LOAD_WEBP;LOAD_WEBP_DYNAMIC="libwebp.dll";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -216,7 +213,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalIncludeDirectories>..\..\..\SDL\include;..\..\external\libpng-1.6.2;..\..\external\jpeg-9;..\..\external\libwebp-0.3.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";LOAD_WEBP;LOAD_WEBP_DYNAMIC="libwebp.dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -229,7 +226,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalIncludeDirectories>..\..\..\SDL\include;..\..\external\libpng-1.6.2;..\..\external\jpeg-9;..\..\external\libwebp-0.3.0\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";LOAD_WEBP;LOAD_WEBP_DYNAMIC="libwebp.dll";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LOAD_BMP;LOAD_PNG;LOAD_PNG_DYNAMIC="libpng.dll";LOAD_JPG;LOAD_JPG_DYNAMIC="jpeg.dll";NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
